@@ -1,5 +1,8 @@
 function stringChop(str, size) {
   // your code here
+	if (str === null) {
+    return [];
+  }
 	let res = [];
 	for (let i = 0; i < str.length; i+= size) {
 		let v = str.substring(i,i+size)
